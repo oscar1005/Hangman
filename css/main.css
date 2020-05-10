@@ -1,0 +1,9 @@
+button {
+    color: red;
+}
+#letters {
+    color: red;
+    border-color: coral;
+    weight: 20px;
+    height: 200px;
+}

@@ -1,0 +1,1 @@
+const letterBtns = document.querySelectorAll('#letters > button');
