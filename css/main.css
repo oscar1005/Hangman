@@ -1,9 +1,17 @@
 button {
     color: red;
+    border-color: black;
 }
 #letters {
-    color: red;
-    border-color: coral;
-    weight: 20px;
-    height: 200px;
+    color: white;
+    weight: 50px;
+    height: 50px;
+    border-color: orange;
+}
+body { 
+    background-color: pink;
+}
+main {
+    color: white;
+    
 }
