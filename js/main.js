@@ -1,5 +1,5 @@
 /*----- constants -----*/
-const winnerWord = ['Olivia', 'Hannah','Oscar', 'senorita','stacy', 'tom', 'jerry'
+const winnerWords= ['Olivia', 'Hannah','Oscar', 'senorita','stacy', 'tom', 'jerry'
 ];
 
 /*----- app's state (variables) -----*/
@@ -24,8 +24,9 @@ lettersEl.addEventListener('click', function(evt) {
 init();
 
 function init() {
-  let randomIdx = Math.floor(Math.random() * winnerWord.length);
- secretWord = winnerWord[randomIdx];
+  let randomIdx = Math.floor(Math.random() * winnerWords.length); // lets secret word chose randomly 
+ secretWord = winnerWords[randomIdx];
+ 
 }
 
 
