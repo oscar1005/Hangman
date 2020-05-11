@@ -1,31 +1,31 @@
 /*----- constants -----*/
-const secretWord = ['Olivia', 'Hannah','Oscar', 'senorita','stacy', 'tom', 'jerry'
+const winnerWord = ['Olivia', 'Hannah','Oscar', 'senorita','stacy', 'tom', 'jerry'
 ];
-// only winning word
 
-//Wrong letters will stay const 
 /*----- app's state (variables) -----*/
 let correctLetter;
-let WrongLetter;
-let correctGuesses;
+let WrongLetters;
+let secretWord;
+let guessWord;
 
 
 
 /*----- cached element references -----*/
-const lettersEl = document.getElementById('letters');
+const lettersEl = document.getElementById('letters'); //chooses letter 
 
 
 
 /*----- event listeners -----*/
 lettersEl.addEventListener('click', function(evt) {
-  console.log(evt.target);
-})
+}) //clicks buttons
 
 
 /*----- functions ---*/
 init();
-function init() {
 
+function init() {
+  let randomIdx = Math.floor(Math.random() * winnerWord.length);
+ secretWord = winnerWord[randomIdx];
 }
 
 
