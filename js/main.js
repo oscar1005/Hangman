@@ -1,5 +1,5 @@
 /*----- constants -----*/
-const secretWord = ['Olivia', 'Hannah', 'Oscar', 'senorita','stacy'
+const secretWord = ['Olivia', 'Hannah','Oscar', 'senorita','stacy', 'tom', 'jerry'
 ];
 // only winning word
 
@@ -11,19 +11,22 @@ let correctGuesses;
 
 
 
-
 /*----- cached element references -----*/
-
+const lettersEl = document.getElementById('letters');
 
 
 
 /*----- event listeners -----*/
-
+lettersEl.addEventListener('click', function(evt) {
+  console.log(evt.target);
+})
 
 
 /*----- functions ---*/
+init();
+function init() {
 
-
+}
 
 
 
